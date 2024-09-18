@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Web</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- <div id="nav"></div> -->
+            <div id="nav">
+                <div class="log">
+                    <h1>WelCome To Weather Web</h1>
+                </div>
+
+                <div class="nav-bar">
+                    <div class="nav-link">
+                        <ul>
+                            <li class="nav-link">
+                                <i class="ri-home-line icon"></i>
+                                <a href="#">Home</a>
+                            </li>
+
+                            <li class="nav-link">
+                                <i class="ri-information-line  icon"></i>
+                                <a href="#">About</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+        
+
+    </header>
+
+    <main>
+
+        <div class="continer">
+            <h1>Weather Forecast for India</h1>
+            <div id="search">
+                <h2> Enter the city name:-</h2>
+                <input type="text" id="search-input" placeholder="Search for city">
+                <button id="search-btn">Search</button>
+            </div>
+
+            <div id="weatherData">
+                <h2>Weather Details</h2>
+                <div class="data" id="weather-info">
+                    <div class="description box-data">
+                        <p id="weatherDescription"></p>
+                    </div>
+                    <div class="temp box-data">
+                        <p id="temperature"></p>
+                    </div>
+                    <div class="humidity box-data">
+                        <p id="humidity"></p>
+                    </div>
+                    <div class="wind box-data">
+                        <p id="windSpeed"></p>
+                    </div>
+                </div>
+              </div>
+
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Weather Forecast India. All Rights Reserved. <b>Made with ❤️ by Keshav Pandit</b></p>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+
+</html>
