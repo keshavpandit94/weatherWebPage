@@ -1,4 +1,4 @@
-const apikey = '3614619e8d2a7437133f7832d61abc4d'
+const apikey = '3614619e8d2a7437133f7832d61abc4d' // use your weather api key now this is not work your code 
 const searchBtn = document.getElementById('search-btn')
 const searchCity = document.getElementById('search-input')
 const weatherDescription = document.getElementById('weatherDescription')
