@@ -19,12 +19,12 @@ body {
     justify-content: space-around;
     height: 10vh;
     width: 100%;
-    background: #e5e7e9;
-    color: #1b2631;
+    background: #1b2631;
+    color: #e5e7e9;
     padding-left: 20px;
     cursor: pointer;
-    box-shadow: 10px 10px 10px black;
-    text-shadow: 0px 2px 20px black;
+    box-shadow: 0px 0px 10px #5d6d7e;
+    /* text-shadow: 0px 2px 20px black; */
     flex-wrap: wrap;
 
 }
@@ -54,7 +54,7 @@ body {
 
 .nav-bar ul a {
     text-decoration: none;
-    color: #1b2631;
+    color: #e5e7e9;
     font-size: 20px;
 }
 
@@ -82,7 +82,7 @@ main {
     margin: 20px 0px;
     font-weight: 600;
     text-decoration: underline;
-    text-shadow: 0px 4px 30px white;
+    /* text-shadow: 0px 4px 30px white; */
 }
 
 #search {
@@ -97,8 +97,8 @@ button {
     padding: 10px;
     border: none;
     border-radius: 15px;
-    background: #5d6d7e;
-    color: #fff;
+    background: #ffff;
+    color: #212121;
     font-size: 14px;
     text-align: center;
     font-weight: 400;
@@ -116,10 +116,8 @@ input::placeholder {
 
 input:hover,
 button:hover {
-    background-color: #fff;
-    color: #1b2631;
     border: 2px solid #212121;
-    box-shadow: 0 5px 8px #eb984e;
+    box-shadow: 0 0px 8px #eb984e;
 }
 
 #weatherData {
@@ -128,7 +126,7 @@ button:hover {
     height: 40vh;
     width: 55vw;
     border-radius: 15px;
-    box-shadow: 0px 0px 20px #eb984e;
+    box-shadow: 0px 0px 10px #515a5a;
     cursor: pointer;
 }
 
@@ -139,14 +137,15 @@ button:hover {
 }
 
 .box-data {
-    background: #eb984e;
+    background: #bdc3c7;
     margin: 25px 20px;
     width: 150px;
     height: 150px;
     padding-top: 40px;
     text-align: center;
     border-radius: 20px;
-    box-shadow: 0px 0px 20px #85c1e9;
+    color: #212121;
+    /* box-shadow: 0px 0px 20px #85c1e9; */
 }
 
 
@@ -157,27 +156,28 @@ button:hover {
     margin: 20px 0px;
     font-weight: 600;
     text-decoration: underline;
-    text-shadow: 0px 2px 25px white;
+    /* text-shadow: 0px 2px 25px white; */
 }
 
 #weatherData p {
     font-size: 20px;
     margin-top: 10px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 
 footer {
     text-align: center;
-    background-color: #f6ddcc;
-    color: #1b2631;
+    background-color: #17202a;
+    color: #ffff;
     padding: 15px;
     width: 100%;
     position: fixed;
     bottom: 0;
-    left: 0;
+    right: 0;
     box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 footer p {
     margin: 5px 0;
@@ -192,6 +192,11 @@ footer p {
 @media only screen and (max-width: 650px) {
 
     /* Adjust container size */
+    .nav-bar ul {
+        display: flex;
+        flex-direction: row;
+    }
+
     .continer {
         width: 90vw;
         height: auto;
@@ -264,6 +269,9 @@ footer p {
 
     /* Footer adjustments */
     footer {
+        position: static;
+        bottom: 0;
+        right: 0;
         padding: 10px;
         font-size: 14px;
     }
